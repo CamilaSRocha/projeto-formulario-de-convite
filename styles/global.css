@@ -1,0 +1,31 @@
+:root {
+    --leckerli-one: "Leckerli One", cursive;
+    --baloo-2: "Baloo 2", sans-serif;
+    --open-sans: "Open Sans", sans-serif;
+
+    --logo: 400 2.5rem var(--leckerli-one);
+    --heading-md: 700 1.75rem var(--baloo-2);
+    --heading-sm: 700 1.125rem var(--baloo-2);
+    --body-md: 400 1rem var(--open-sans);
+    --body-sm: 400 .875rem var(--open-sans);
+    --body-md: 400 .75rem var(--open-sans);
+
+    --brand-light: #59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1D6FB6;
+
+    --danger: #FF5959;
+
+    --input-base: #1C1F21;
+    --input-stroke: #363B40;
+    --input-placeholder: #869198;
+
+    --shape-background: #131516;
+    --shape-body: #212427;
+    --shape-button: #2D3136;
+    --shape-hover: #383D42;
+
+    --text-body: #C8CDD0;
+    --text-heading: #F9F9F9;
+
+}
