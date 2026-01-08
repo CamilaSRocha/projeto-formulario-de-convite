@@ -24,7 +24,54 @@
         </aside>
 
         <main>
+            <div class="main-container">
+                <h1>Crie seu convite</h1>
 
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset class="about-the-event">
+                        <img src="" alt="">
+                        <legend>Sobre o evento</legend>
+
+                        <div class="input-wrapper">
+                            <label for="title">Título</label>
+                            <input type="text" name="title" id="title" placeholder="Nome do evento" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="end-date">Fim</label>
+                            <input type="datetime" name="end-date" id="end-date" lang="pt-br" placeholder="DD/MM/AAAA, --:--">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="start-date">Início</label>
+                            <input type="datetime" name="start-date" id="start-date" lang="pt-br" placeholder="DD/MM/AAAA, --:--">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="type">Tipo</label>
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <div class="radio-img"></div>
+                                    <input type="radio" name="type" id="in-person" value="in-person" checked>
+                                    <img src="assets/building-1.svg" alt="ícone indicando evento presencial">
+                                    <label for="in-person">Presencial</label>
+                                </div>
+                                <div class="radio-inner">
+                                    <div class="radio-img"></div>
+                                    <input type="radio" name="type" id="online" value="online">
+                                    <img src="assets/online-1.svg" alt="ícone indicando evento presencial">
+                                    <label for="online">Online</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="local">Local</label>
+                            <input type="text" name="local" id="local" placeholder="Link ou endereço">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" cols="136" rows="8" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </main>
     </div>
 </body>
