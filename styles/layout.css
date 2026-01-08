@@ -1,0 +1,43 @@
+#app {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+
+    padding: 1.25rem;
+
+    overflow: hidden;
+    background-color: var(--shape-background);
+
+    & aside, main {
+        border-radius: .75rem;
+    }
+}
+
+aside {
+    background-image: url(/assets/Background.png);
+    background-size: cover;
+
+    & header {
+        padding: 2rem;
+
+        & img {
+            max-height: 3rem;
+        }
+
+        & h1 {
+            font: var(--logo);
+            color: #FF598B;
+            margin: 1rem auto .25rem;
+        }
+
+        & p {
+            font: var(--body-md);
+            color: var(--text-heading);
+        }
+    }
+}
+
+main {
+    background-color: var(--shape-body);
+}
