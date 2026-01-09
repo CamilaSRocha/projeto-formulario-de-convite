@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --leckerli-one: "Leckerli One", cursive;
     --baloo-2: "Baloo 2", sans-serif;
@@ -30,8 +36,15 @@
 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-2 {
+    flex: 2;
 }

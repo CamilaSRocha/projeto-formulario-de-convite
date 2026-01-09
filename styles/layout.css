@@ -1,7 +1,7 @@
 #app {
     display: grid;
     gap: 1.25rem;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 25% auto ;
     height: 100vh;
 
     padding: 1.25rem;
@@ -40,4 +40,23 @@ aside {
 
 main {
     background-color: var(--shape-body);
+
+    overflow: auto;
+    padding: 5rem 8.125rem;
+
+    & .legend-wrapper {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+
+        & img {
+            align-self: first baseline;
+        }
+
+    }
+
+    & h1 {
+        font: var(--heading-md);
+        color: var(--text-heading);
+    }
 }
