@@ -1,0 +1,77 @@
+.customization {
+    display: grid;
+    grid-template-rows: auto;
+    gap: .75rem;
+
+    .radio-wrapper {
+        background-color: none;
+        border: none;
+        outline: none;
+    }
+
+    .blue {
+        input {
+            background-color: var(--brand-light);
+        }
+    }
+
+    .navy {
+        input {
+            background-color: var(--navy);
+        }
+    }
+
+    .purple {
+        input {
+            background-color: var(--purple);
+        }
+    }
+
+    .fuschia {
+        input {
+            background-color: var(--fuschia);
+        }
+    }
+
+    .pink {
+        input {
+            background-color: var(--pink);
+        }
+    }
+
+    .red {
+        input {
+            background-color: var(--danger);
+        }
+    }
+
+    .orange {
+        input {
+            background-color: var(--orange);
+        }
+    }
+
+    .yellow {
+        input {
+            background-color: var(--yellow);
+        }
+    }
+
+    .lime {
+        input {
+            background-color: var(--lime);
+        }
+    }
+
+    .green {
+        input {
+            background-color: var(--green);
+        }
+    }
+
+    .cyan {
+        input {
+            background-color: var(--cyan);
+        }
+    }
+}

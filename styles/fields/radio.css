@@ -2,12 +2,39 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
     gap: .25rem;
-
+    
     border: 4px solid transparent;
     outline: 1px solid var(--input-stroke);
     background-color: var(--input-base);
 
+    
+    
     border-radius: .5rem;
+    
+    .circle {
+        & input {
+            height: 1.75rem;
+            width: 1.75rem;
+            border: .5rem solid var(--shape-button);
+            border-radius: 100%;
+
+        }
+        
+        & input:focus,
+        & input:hover {
+            height: 1.75rem;
+            width: 1.75rem;
+            border: .5rem solid var(--shape-hover);
+            border-radius: 100%;
+        }
+
+        &:has(:checked){
+            input {
+                outline: 2px solid var(--brand-light); 
+            }
+        }    
+    }
+
 }
 
 .radio-inner {

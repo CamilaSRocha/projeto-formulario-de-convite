@@ -33,6 +33,7 @@
                             <img src="assets/calendar.svg" alt="ícone de calendário">
                             <legend>Sobre o evento</legend>
                         </div>
+
                         <div class="input-wrapper">
                             <label for="title">Título</label>
                             <input type="text" name="title" id="title" placeholder="Nome do evento" required>
@@ -75,6 +76,51 @@
                         <div class="input-wrapper">
                             <label for="description">Descrição</label>
                             <textarea name="description" id="description" cols="136" rows="8" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="customization" enctype="multipart/form-data">
+                        <div class="legend-wrapper">
+                            <img src="assets/paintbrush-vertical.svg" alt="ícone de um pincel">
+                            <legend>Personalização</legend>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="principal-color">Cor principal</label>
+                            <div class="radio-wrapper">
+                                <div class="radio-inner circle blue">
+                                    <input type="radio" name="blue" id="blue" value="blue">
+                                </div>
+                                <div class="radio-inner circle navy">
+                                    <input type="radio" name="navy" id="navy" value="navy">
+                                </div>
+                                <div class="radio-inner circle purple">
+                                    <input type="radio" name="purple" id="purple" value="purple">
+                                </div>
+                                <div class="radio-inner circle fuschia">
+                                    <input type="radio" name="fuschia" id="fuschia" value="fuschia">
+                                </div>
+                                <div class="radio-inner circle pink">
+                                    <input type="radio" name="pink" id="pink" value="pink">
+                                </div>
+                                <div class="radio-inner circle red">
+                                    <input type="radio" name="red" id="red" value="red">
+                                </div>
+                                <div class="radio-inner circle orange">
+                                    <input type="radio" name="orange" id="orange" value="orange">
+                                </div>
+                                <div class="radio-inner circle yellow">
+                                    <input type="radio" name="yellow" id="yellow" value="yellow">
+                                </div>
+                                <div class="radio-inner circle lime">
+                                    <input type="radio" name="lime" id="lime" value="lime">
+                                </div>
+                                <div class="radio-inner circle green">
+                                    <input type="radio" name="green" id="green" value="green">
+                                </div>
+                                <div class="radio-inner circle cyan">
+                                    <input type="radio" name="cyan" id="cyan" value="cyan">
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
                 </form>
