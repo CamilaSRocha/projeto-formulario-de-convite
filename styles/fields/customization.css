@@ -75,3 +75,12 @@
         }
     }
 }
+
+.themes-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+}

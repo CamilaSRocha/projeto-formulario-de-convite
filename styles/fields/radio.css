@@ -33,6 +33,27 @@
         }
     }
 
+    .themes {
+        display: flex;
+        flex-direction: column;
+        padding: .25rem .25rem .25rem 2.25rem;
+        background-color: var(--shape-button);
+        border: 1px solid var(--input-stroke);
+
+        & label {
+            text-align: center;
+        }
+
+
+        & input,
+        & input:focus,
+        & input:hover {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+
+    }
 }
 
 .radio-inner {
