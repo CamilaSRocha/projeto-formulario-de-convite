@@ -9,7 +9,7 @@
     
     border-radius: .5rem; 
     
-    .circle {
+    .colors {
         & input {
             content: '';
             height: 1.75rem;
