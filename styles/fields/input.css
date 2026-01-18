@@ -22,3 +22,9 @@ label {
     display: block;
     margin-bottom: .75rem;
 }
+
+.input-wrapper {
+    label {
+        margin-top: 1.75rem;
+    }
+}
