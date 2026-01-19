@@ -43,6 +43,13 @@
 
         border-radius: 1rem;
 
+        position: relative;
+
+        &:hover,
+        &:focus-within {
+            background-color: var(--shape-hover);
+        }
+
         img {
             width: 15.5rem;
             height: auto;
@@ -63,7 +70,9 @@
             position: absolute;
             inset: 0;
         }
-        
+        &:has(:checked) {
+            outline: 2px solid var(--brand-light);
+        }
 
     }
 }
