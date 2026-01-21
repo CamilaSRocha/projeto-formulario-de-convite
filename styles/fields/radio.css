@@ -35,34 +35,15 @@
     }
 
     .themes {
-        display: flex;
-        flex-direction: column;
-
+        display: grid;
+        
         background-color: var(--shape-button);
         border: 1px solid var(--input-stroke);
-
+        
         border-radius: 1rem;
-
+        
         position: relative;
-
-        &:hover,
-        &:focus-within {
-            background-color: var(--shape-hover);
-        }
-
-        img {
-            width: 15.5rem;
-            height: auto;
-            max-width: 100%;
-            margin: .5rem .5rem 0 .5rem;
-
-            border-radius: .75rem;
-        }
-
-        & label {
-            text-align: center;
-        }
-
+        
         & input,
         & input:focus,
         & input:hover {
@@ -70,6 +51,29 @@
             position: absolute;
             inset: 0;
         }
+
+        &:hover,
+        &:focus-within {
+            background-color: var(--shape-hover);
+        }
+
+        input {
+            z-index: 2;
+        }
+
+        img {
+            width: 15.5rem;
+            height: auto;
+            margin: .5rem .5rem 0 .5rem;
+
+            border-radius: .75rem;
+            filter: none;
+        }
+
+        & label {
+            text-align: center;
+        }
+
         &:has(:checked) {
             outline: 2px solid var(--brand-light);
         }
