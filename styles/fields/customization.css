@@ -1,4 +1,4 @@
-.customization {
+#customization {
     display: grid;
     grid-template-rows: auto;
     gap: .75rem;
@@ -81,7 +81,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .5rem;
-
+    background: none;
     border: 1px solid var(--input-stroke);
 }
 
@@ -108,7 +108,7 @@
         outline: 1px solid var(--input-placeholder);
     }
 
-    span {
+    & span {
         display: block;
         width: 4rem;
         height: 2rem;
