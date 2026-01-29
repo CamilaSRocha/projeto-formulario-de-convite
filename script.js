@@ -1,5 +1,12 @@
 function toggleMode() {
     const html = document.documentElement
-    html.classList.toggle("dark")
-    
+    const modeName = document.getElementById("mode-name")
+
+    html.classList.toggle("light")
+
+    if (html.classList.contains("light")) {
+        modeName.textContent = "Claro"
+    } else {
+        modeName.textContent = "Escuro"
+    }
 }
