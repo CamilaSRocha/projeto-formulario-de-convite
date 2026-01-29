@@ -1,0 +1,36 @@
+#switch {
+    position: relative;
+    width: 4rem;
+
+    & button {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0;
+        border-radius: 50%;
+        background: var(--input-stroke);
+
+        position: absolute;
+        z-index: 1;
+        top: 75%;
+        left: 8%;
+        transform: translateY(-50%);
+        animation: slide-back 0.3s;
+    }
+
+    & button:hover {
+        outline: 1px solid var(--input-placeholder);
+    }
+
+    & span {
+        display: block;
+        width: 4rem;
+        height: 2rem;
+        background: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: 9999px;
+    }
+}
+
+.light #switch button {
+    animation: slide-in 0.3s forwards;
+}
