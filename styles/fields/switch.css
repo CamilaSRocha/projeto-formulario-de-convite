@@ -1,6 +1,7 @@
 #switch {
+    display: block;
     position: relative;
-    width: 4rem;
+    width: 11rem;
 
     & button {
         width: 1.5rem;
@@ -11,9 +12,9 @@
 
         position: absolute;
         z-index: 1;
-        top: 75%;
-        left: 8%;
-        transform: translateY(-50%);
+        top: 46%;
+        left: 3%;
+        transform: translateY(-46%);
         animation: slide-back 0.3s;
     }
 
@@ -31,8 +32,8 @@
         font: var(--body-sm);
         color:  var(--text-heading);
         
-        top: 60%;
-        left: 100%;
+        top: 37%;
+        left: 35%;
         padding-left: .75rem;
     }
 }
@@ -50,20 +51,20 @@
 
 @keyframes slide-in {
     from {
-        left: 8%;
+        left: 3%;
     }
 
     to {
-        left: 52%;
+        left: 20%;
     }
 }
 
 @keyframes slide-back {
     from {
-        left: 52%;
+        left: 20%;
     }
     to {
-        left: 8%;
+        left: 3%;
     }
 }
 
