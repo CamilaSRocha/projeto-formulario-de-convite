@@ -2,8 +2,9 @@
     position: relative;
     width: 11rem;
 
-    .switch-btn {
-        width: fit-content;
+    & .switch-btn,
+    & button {
+        cursor: pointer;
     }
 
     & button {
