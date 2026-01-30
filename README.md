@@ -17,3 +17,4 @@ Esse sistema permite preencher informações como: *título*, *data*, *local* e 
 ## Tecnologias usadas
 - HTML
 - CSS
+- JavaScript
