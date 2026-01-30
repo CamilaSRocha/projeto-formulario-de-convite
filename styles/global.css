@@ -14,7 +14,7 @@
     --heading-sm: 700 1.125rem var(--baloo-2);
     --body-md: 400 1rem var(--open-sans);
     --body-sm: 400 .875rem var(--open-sans);
-    --body-md: 400 .75rem var(--open-sans);
+    --body-xs: 400 .75rem var(--open-sans);
 
     --brand-light: #59B2FF;
     --brand-mid: #3487CF;

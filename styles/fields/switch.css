@@ -12,9 +12,9 @@
 
         position: absolute;
         z-index: 1;
-        top: 46%;
+        top: 65%;
         left: 3%;
-        transform: translateY(-46%);
+        transform: translateY(-45%);
         animation: slide-back 0.3s;
     }
 
@@ -32,7 +32,7 @@
         font: var(--body-sm);
         color:  var(--text-heading);
         
-        top: 37%;
+        top: 50%;
         left: 35%;
         padding-left: .75rem;
     }

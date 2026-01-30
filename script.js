@@ -10,3 +10,4 @@ function toggleMode() {
         modeName.textContent = "Escuro"
     }
 }
+

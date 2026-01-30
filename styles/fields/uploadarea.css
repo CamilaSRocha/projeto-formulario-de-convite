@@ -1,0 +1,41 @@
+.uploadarea-wrapper { 
+    width: 100%;
+    
+    .uploadzone {
+        display: flex;
+        gap: .75rem;
+        align-items: center;
+        & span {
+            font: var(--body-md);
+            color: var(--input-placeholder);
+            
+        }
+    }
+
+    .upload-btn {
+        display: flex;
+        background-color: var(--shape-button);
+        border-radius: .5rem;
+        width: 7.5rem;
+        height: 2.5rem;
+    
+        font: var(--body-sm);
+        color: var(--text-heading);
+        font-weight: 600;
+    
+        gap: .75rem;
+        padding: .65rem .75rem;
+    
+        & input {
+            position: absolute;
+            opacity: 0;
+            inset: 0;
+            width: 7.5rem;
+            height: 100%;
+        }
+
+        & img {
+            width: 1rem;
+        }
+    }
+}
