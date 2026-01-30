@@ -1,5 +1,4 @@
 .uploadarea-wrapper { 
-    width: 100%;
     
     .uploadzone {
         display: flex;
@@ -25,7 +24,8 @@
     
         gap: .75rem;
         padding: .65rem .75rem;
-    
+        
+        position: relative;
         & input {
             position: absolute;
             opacity: 0;

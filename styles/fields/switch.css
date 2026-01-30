@@ -1,7 +1,10 @@
 #switch {
-    display: block;
     position: relative;
     width: 11rem;
+
+    .switch-btn {
+        width: fit-content;
+    }
 
     & button {
         width: 1.5rem;
