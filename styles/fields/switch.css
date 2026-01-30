@@ -1,6 +1,7 @@
 #switch {
     position: relative;
     width: 11rem;
+    height: 5rem;
 
     & .switch-btn,
     & button {
@@ -16,9 +17,9 @@
 
         position: absolute;
         z-index: 1;
-        top: 65%;
+        top: 57%;
         left: 3%;
-        transform: translateY(-45%);
+        transform: translateY(-43%);
         animation: slide-back 0.3s;
     }
 
@@ -36,7 +37,7 @@
         font: var(--body-sm);
         color:  var(--text-heading);
         
-        top: 50%;
+        top: 48%;
         left: 35%;
         padding-left: .75rem;
     }

@@ -203,11 +203,15 @@
                                 <label for="cover-photo">Foto de capa</label>
                                 <div class="uploadzone">
                                     <div class="upload-btn">
-                                        <input type="file" name="cover-photo" id="cover-photo">
+                                        <input type="file" name="cover-photo" id="cover-photo" accept="image/*">
                                         <img src="/assets/upload.svg" alt="ícone de upload">
                                         <p>Selecionar</p>
                                     </div>
-                                    <span>Nenhum arquivo selecionado</span>
+                                    <span id="upload-span">Nenhum arquivo selecionado</span>
+                                </div>
+                                <div class="error">
+                                    <img src="assets/circle-alert.svg" alt="ícone de alerta">
+                                    <span>Error message</span>
                                 </div>
                             </div>
                         </div>

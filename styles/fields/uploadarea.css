@@ -39,4 +39,15 @@
             width: 1rem;
         }
     }
+
+    .error {
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--danger);
+        align-items: center;
+
+        margin-top: .5rem;
+    }
 }
