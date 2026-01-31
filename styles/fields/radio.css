@@ -1,84 +1,6 @@
 .radio-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
     gap: .25rem;
-    
-    border: 4px solid transparent;
-    outline: 1px solid var(--input-stroke);
-    background-color: var(--input-base);
-    
-    border-radius: .5rem; 
-    
-    .colors {
-        
-        & input {
-            content: '';
-            height: 1.75rem;
-            width: 1.75rem;
-            border: .5rem solid var(--shape-button);
-            border-radius: 100%;
-        }
-        
-        & input:hover,
-        & input:focus-within {
-            height: 1.75rem;
-            width: 1.75rem;
-            border: .5rem solid var(--shape-hover);
-            border-radius: 100%;
-        }
-        
-        &:has(:checked) {
-            input[type="radio"] {
-                outline: 2px solid var(--brand-light);
-            }
-        }
-    }
-
-    .themes {
-        display: grid;
-        
-        background-color: var(--shape-button);
-        border: 1px solid var(--input-stroke);
-        
-        border-radius: 1rem;
-        
-        position: relative;
-        
-        & input,
-        & input:focus,
-        & input:hover {
-            all: unset;
-            position: absolute;
-            inset: 0;
-        }
-
-        &:hover,
-        &:focus-within {
-            background-color: var(--shape-hover);
-        }
-
-        input {
-            z-index: 2;
-        }
-
-        img {
-            width: 15.5rem;
-            height: auto;
-            margin: .5rem .5rem 0 .5rem;
-
-            border-radius: .75rem;
-            filter: none;
-        }
-
-        & label {
-            text-align: center;
-        }
-
-        &:has(:checked) {
-            outline: 2px solid var(--brand-light);
-        }
-
-    }
+    border-radius: .5rem;
 }
 
 .radio-inner {
@@ -128,4 +50,173 @@
             width: 0;
         }
     }
+}
+
+.type-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border: 4px solid transparent;
+    outline: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+}
+
+.colors-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+
+    .colors {
+        & input {
+            content: '';
+            height: 1.75rem;
+            width: 1.75rem;
+            border: .5rem solid var(--shape-button);
+            border-radius: 100%;
+        }
+        
+        & input:hover,
+        & input:focus-within {
+            height: 1.75rem;
+            width: 1.75rem;
+            border: .5rem solid var(--shape-hover);
+            border-radius: 100%;
+        }
+        
+        &:has(:checked) {
+            input[type="radio"] {
+                outline: 2px solid var(--brand-light);
+            }
+        }
+    }
+
+    .blue {
+        input {
+            background-color: var(--brand-light);
+        }
+    }
+
+    .navy {
+        input {
+            background-color: var(--navy);
+        }
+    }
+
+    .purple {
+        input {
+            background-color: var(--purple);
+        }
+    }
+
+    .fuschia {
+        input {
+            background-color: var(--fuschia);
+        }
+    }
+
+    .pink {
+        input {
+            background-color: var(--pink);
+        }
+    }
+
+    .red {
+        input {
+            background-color: var(--danger);
+        }
+    }
+
+    .orange {
+        input {
+            background-color: var(--orange);
+        }
+    }
+
+    .yellow {
+        input {
+            background-color: var(--yellow);
+        }
+    }
+
+    .lime {
+        input {
+            background-color: var(--lime);
+        }
+    }
+
+    .green {
+        input {
+            background-color: var(--green);
+        }
+    }
+
+    .cyan {
+        input {
+            background-color: var(--cyan);
+        }
+    }
+}
+
+.themes-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    gap: .5rem;
+    background: none;
+    
+    height: auto;
+    width: 20rem;
+
+    .themes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        
+        background-color: var(--shape-button);
+        border: 1px solid var(--input-stroke);
+        
+        border-radius: 1rem;
+        
+        position: relative;
+        
+        & input,
+        & input:focus,
+        & input:hover {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+
+        &:hover,
+        &:focus-within {
+            background-color: var(--shape-hover);
+        }
+
+        input {
+            z-index: 2;
+        }
+
+        img {
+            width: 15.5rem;
+            height: auto;
+            margin: .5rem .5rem 0 .5rem;
+
+            border-radius: .75rem;
+            filter: none;
+        }
+
+        & label {
+            text-align: center;
+        }
+
+        &:has(:checked) {
+            outline: 2px solid var(--brand-light);
+        }
+
+    }
+}
+
+.colors-wrapper, 
+.themes-wrapper {
+    margin-bottom: 1.75rem;
 }
