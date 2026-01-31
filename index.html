@@ -27,7 +27,7 @@
             <div class="main-container">
                 <h1>Crie seu convite</h1>
 
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="" method="get" enctype="multipart/form-data">
                     <fieldset class="about-the-event">
                         <div class="legend-wrapper">
                             <img src="assets/calendar.svg" alt="ícone de calendário">
@@ -203,15 +203,15 @@
                                 <label for="cover-photo">Foto de capa</label>
                                 <div class="uploadzone">
                                     <div class="upload-btn">
-                                        <input type="file" name="cover-photo" id="cover-photo" accept="image/*">
+                                        <input type="file" name="cover-photo" id="cover-photo" accept="image/png, image/jpeg, imagem/webp">
                                         <img src="/assets/upload.svg" alt="ícone de upload">
                                         <p>Selecionar</p>
                                     </div>
                                     <span id="upload-span">Nenhum arquivo selecionado</span>
                                 </div>
-                                <div class="error">
+                                <div id="file-error" class="error">
                                     <img src="assets/circle-alert.svg" alt="ícone de alerta">
-                                    <span>Error message</span>
+                                    <span></span>
                                 </div>
                             </div>
                         </div>
