@@ -40,4 +40,13 @@ form.addEventListener("submit", function (event) {
     }
 })
 
-form
+// Faz com que o span que fica ao lado da seleção mostre escrito o nome do arquivo selecionado. Caso não mostre, aparece o que já está escrito no HTML que é "Nenhum arquivo selecionado".
+fileInput.addEventListener('change', function(event) {
+
+    const file = event.target.files[0]
+    const uploadSpan = document.getElementById("upload-span")
+
+    if (file) {
+        uploadSpan.textContent = (file.name)
+    }
+})
