@@ -1,0 +1,29 @@
+
+
+.checkbox-inner { 
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+    position: relative;
+    
+    input[type="checkbox"] {
+            all: unset;
+            inset: 0;
+            position: absolute;
+            background: none;
+    }
+    
+    .checkbox-image {
+        background-image: url(../../assets/checkbox-default.svg) ;
+        flex: 0 0 1.25rem;
+        height: 1.25rem;
+    }
+
+    & label span {
+        color: var(--brand-light);
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
+
+
