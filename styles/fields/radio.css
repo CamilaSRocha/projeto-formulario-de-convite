@@ -163,18 +163,18 @@
 
 .themes-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 16rem));
 
     gap: .5rem;
     background: none;
     
     height: auto;
-    width: 20rem;
 
     .themes {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         width: auto;
         
         background-color: var(--shape-button);
@@ -202,9 +202,9 @@
         }
 
         img {
-            width: 15.5rem;
+            width: 16rem;
             height: auto;
-            margin: .5rem .5rem 0 .5rem;
+            padding: .4rem .4rem 0 .4rem;
 
             border-radius: .75rem;
             filter: none;
