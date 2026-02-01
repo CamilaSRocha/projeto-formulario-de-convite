@@ -5,10 +5,9 @@
     position: relative;
     
     input[type="checkbox"] {
-            all: unset;
-            inset: 0;
-            position: absolute;
-            background: none;
+        all: unset;
+        inset: 0;
+        position: absolute;
     }
     
     .checkbox-image {
@@ -21,6 +20,10 @@
         color: var(--brand-light);
         font-weight: 600;
         text-decoration: underline;
+    }
+
+    &:has(:checked) .checkbox-image {
+        background-image: url(../../assets/checkbox-checked.png);
     }
 }
 
