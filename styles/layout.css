@@ -61,3 +61,8 @@ main {
         color: var(--text-heading);
     }
 }
+
+.divisor {
+    border-bottom: 1px solid var(--input-stroke);
+    margin: 3rem auto 2.5rem;
+}
