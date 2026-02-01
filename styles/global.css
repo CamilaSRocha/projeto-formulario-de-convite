@@ -58,3 +58,14 @@ body {
 .flex-2 {
     flex: 2;
 }
+
+.error {
+    display: none;
+    gap: .5rem;
+
+    font: var(--body-xs);
+    color: var(--danger);
+    align-items: center;
+
+    margin-top: .5rem;
+}
