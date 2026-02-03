@@ -50,3 +50,22 @@ fileInput.addEventListener('change', function(event) {
         uploadSpan.textContent = (file.name)
     }
 })
+
+// Faz com que a div de erro apareça somente quando tiver um erro ao não preencher o input obrigatório. Também coloca uma outline vermelha em volta do input. 
+form.addEventListener("submit", (e) => { 
+
+    const inputElement = document.getElementById("name") 
+    const errorDiv = document.getElementById("input-error") 
+    const errorSpan = errorDiv.querySelector("span") 
+
+    if (!inputElement.checkValidity()) { 
+        e.preventDefault() 
+        errorDiv.style.display = "flex" 
+        errorSpan.textContent = "Campo obrigatório" 
+        input.classList.add('invalid-field') 
+    } else { 
+        input.classList.remove('invalid-field') 
+    } 
+})
+
+

@@ -69,3 +69,7 @@ body {
 
     margin-top: .5rem;
 }
+
+.invalid-field {
+    outline: solid 1px var(--danger) !important;
+}

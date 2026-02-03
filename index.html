@@ -27,7 +27,7 @@
             <div class="main-container">
                 <h1>Crie seu convite</h1>
 
-                <form action="" method="get" enctype="multipart/form-data">
+                <form action="" method="get" enctype="multipart/form-data" novalidate>
                     <fieldset id="about-the-event">
                         <div class="legend-wrapper">
                             <img src="assets/calendar.svg" alt="ícone de calendário">
@@ -36,7 +36,8 @@
 
                         <div class="input-wrapper">
                             <label for="title">Título</label>
-                            <input type="text" name="title" id="title" placeholder="Nome do evento" required>
+                            <input type="text" name="title" id="title" placeholder="Nome do evento">
+                            
                         </div>
 
                         <div class="flex">
@@ -52,7 +53,7 @@
 
                         <div class="flex">
                             <div class="input-wrapper flex-2">
-                                <label for="type">Tipo</label>
+                                <label>Tipo</label>
                                 <div class="radio-wrapper type-wrapper">
                                     <div class="radio-inner">
                                         <input type="radio" name="type" id="in-person" value="in-person" checked>
@@ -86,7 +87,7 @@
                         </div>
 
                         <div class="input-wrapper">
-                            <label for="principal-color">Cor principal</label>
+                            <label>Cor principal</label>
                             <div class="radio-wrapper colors-wrapper">
                                 <div class="radio-inner colors blue">
                                     <input type="radio" name="principal-color" id="blue" value="blue" checked>
@@ -125,7 +126,7 @@
                         </div>
 
                         <div class="input-wrapper">
-                            <label for="event-theme">Tema do evento</label>
+                            <label>Tema do evento</label>
                             <div class="radio-wrapper themes-wrapper">
 
                                 <div class="radio-inner themes">
@@ -192,7 +193,7 @@
                         </div>
                         <div class="flex">
                             <div id="switch">
-                                <label for="style">Estilo</label>
+                                <label>Estilo</label>
                                 <div class="switch-btn" onclick="toggleMode()">
                                     <button type="button"></button>
                                     <span></span>
@@ -227,9 +228,9 @@
                         <div class="input-wrapper">
                             <label for="name">Nome</label>
                             <input type="text" name="name" id="name" placeholder="Nome completo" required>
-                            <div class="error">
+                            <div id="input-error" class="error">
                                 <img src="assets/circle-alert.svg" alt="ícone de alerta">
-                                <span>teste</span>
+                                <span></span>
                             </div>
                         </div>
 
