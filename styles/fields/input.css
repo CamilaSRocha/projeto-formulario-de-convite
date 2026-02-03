@@ -15,6 +15,13 @@ select {
     color: var(--text-heading);
 }
 
+input,
+textarea {
+    &:focus-within {
+        outline: solid 1px var(--brand-light);
+    }
+}
+
 label {
     font: var(--body-sm);
     color: var(--text-body);

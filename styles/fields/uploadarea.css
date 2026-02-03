@@ -27,6 +27,11 @@
 
         position: relative;
 
+        &:hover,
+        &:focus-within {
+            background-color: var(--shape-hover);
+        }
+
         & input {
             position: absolute;
             opacity: 0;

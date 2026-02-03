@@ -17,6 +17,10 @@
         color: var(--text-heading);
         font: var(--body-md);
         font-weight: 600;
-
+        
+        &:hover,
+        &:focus-within {
+            background-color: var(--brand-light);
+        }
     }
 }
