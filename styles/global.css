@@ -68,6 +68,10 @@ body {
     align-items: center;
 
     margin-top: .5rem;
+
+    &[type="text"] {
+        
+    }
 }
 
 .invalid-field {

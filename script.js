@@ -62,9 +62,9 @@ form.addEventListener("submit", (e) => {
         e.preventDefault() 
         errorDiv.style.display = "flex" 
         errorSpan.textContent = "Campo obrigatório" 
-        input.classList.add('invalid-field') 
+        inputElement.classList.add('invalid-field') 
     } else { 
-        input.classList.remove('invalid-field') 
+        inputElement.classList.remove('invalid-field') 
     } 
 })
 
